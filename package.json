@@ -1,0 +1,11 @@
+{
+  "name": "appbackend",
+  "version": "1.0.0",
+  "description": "Una API para un proyecto para compartir enlaces con amigos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mustajunior",
+  "license": "MIT"
+}
