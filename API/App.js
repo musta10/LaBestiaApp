@@ -21,8 +21,8 @@ const User = mongoose.model("UserInfo");
 app.post("/register", async (req, res) => {
   const { username, email, password } = req.body;
 
-  const oldUser = await User.findOne({ email: email });
-  if (oldUser) {
+  const newUser = await User.findOne({ email: email });
+  if (newUser) {
     return res.send({ data: "User already exists" });
   }
 
@@ -45,5 +45,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Server is Run");
+  console.log("Server is Run", 3000);
 });
