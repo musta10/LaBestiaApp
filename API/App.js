@@ -30,6 +30,8 @@ app.post("/register", async (req, res) => {
       email: email,
       password: encryptedPassword,
     });
+   
+    await newUser.save()
     res.send({ status: 200, data: "User Created" });
   } catch (error) {
     res.send({ status: 304, data: "error" });
